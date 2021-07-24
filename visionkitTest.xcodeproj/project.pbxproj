@@ -10,9 +10,11 @@
 		35F4DBA026ABEAA7000E59D0 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DB9F26ABEAA7000E59D0 /* AppDelegate.swift */; };
 		35F4DBA226ABEAA7000E59D0 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DBA126ABEAA7000E59D0 /* SceneDelegate.swift */; };
 		35F4DBA426ABEAA7000E59D0 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DBA326ABEAA7000E59D0 /* ViewController.swift */; };
-		35F4DBA726ABEAA7000E59D0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F4DBA526ABEAA7000E59D0 /* Main.storyboard */; };
 		35F4DBA926ABEAA8000E59D0 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 35F4DBA826ABEAA8000E59D0 /* Assets.xcassets */; };
 		35F4DBAC26ABEAA8000E59D0 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 35F4DBAA26ABEAA8000E59D0 /* LaunchScreen.storyboard */; };
+		35F4DBB426ABEEAA000E59D0 /* ScanButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DBB326ABEEAA000E59D0 /* ScanButton.swift */; };
+		35F4DBB626ABEF9D000E59D0 /* ScanImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DBB526ABEF9D000E59D0 /* ScanImageView.swift */; };
+		35F4DBB826ABF01A000E59D0 /* OCRTextView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 35F4DBB726ABF01A000E59D0 /* OCRTextView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,10 +22,12 @@
 		35F4DB9F26ABEAA7000E59D0 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		35F4DBA126ABEAA7000E59D0 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		35F4DBA326ABEAA7000E59D0 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		35F4DBA626ABEAA7000E59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		35F4DBA826ABEAA8000E59D0 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		35F4DBAB26ABEAA8000E59D0 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		35F4DBAD26ABEAA8000E59D0 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		35F4DBB326ABEEAA000E59D0 /* ScanButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanButton.swift; sourceTree = "<group>"; };
+		35F4DBB526ABEF9D000E59D0 /* ScanImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScanImageView.swift; sourceTree = "<group>"; };
+		35F4DBB726ABF01A000E59D0 /* OCRTextView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OCRTextView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,10 +63,12 @@
 				35F4DB9F26ABEAA7000E59D0 /* AppDelegate.swift */,
 				35F4DBA126ABEAA7000E59D0 /* SceneDelegate.swift */,
 				35F4DBA326ABEAA7000E59D0 /* ViewController.swift */,
-				35F4DBA526ABEAA7000E59D0 /* Main.storyboard */,
 				35F4DBA826ABEAA8000E59D0 /* Assets.xcassets */,
 				35F4DBAA26ABEAA8000E59D0 /* LaunchScreen.storyboard */,
 				35F4DBAD26ABEAA8000E59D0 /* Info.plist */,
+				35F4DBB326ABEEAA000E59D0 /* ScanButton.swift */,
+				35F4DBB526ABEF9D000E59D0 /* ScanImageView.swift */,
+				35F4DBB726ABF01A000E59D0 /* OCRTextView.swift */,
 			);
 			path = visionkitTest;
 			sourceTree = "<group>";
@@ -126,7 +132,6 @@
 			files = (
 				35F4DBAC26ABEAA8000E59D0 /* LaunchScreen.storyboard in Resources */,
 				35F4DBA926ABEAA8000E59D0 /* Assets.xcassets in Resources */,
-				35F4DBA726ABEAA7000E59D0 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +142,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				35F4DBB426ABEEAA000E59D0 /* ScanButton.swift in Sources */,
 				35F4DBA426ABEAA7000E59D0 /* ViewController.swift in Sources */,
 				35F4DBA026ABEAA7000E59D0 /* AppDelegate.swift in Sources */,
+				35F4DBB626ABEF9D000E59D0 /* ScanImageView.swift in Sources */,
+				35F4DBB826ABF01A000E59D0 /* OCRTextView.swift in Sources */,
 				35F4DBA226ABEAA7000E59D0 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -146,14 +154,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		35F4DBA526ABEAA7000E59D0 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				35F4DBA626ABEAA7000E59D0 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		35F4DBAA26ABEAA8000E59D0 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -289,6 +289,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
 				INFOPLIST_FILE = visionkitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -296,7 +297,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.visionkitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -308,6 +309,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = LT5ZADXQMP;
 				INFOPLIST_FILE = visionkitTest/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -315,7 +317,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.dwkang.visionkitTest;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
